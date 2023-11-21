@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://qm7nra1w75wj"]
+
+[ext_resource type="Script" path="res://UI/Camera2D.gd" id="1_yo37u"]
+[ext_resource type="StyleBox" uid="uid://hib5vqxpdxw0" path="res://UI/boxRes.tres" id="2_qp0od"]
+[ext_resource type="PackedScene" uid="uid://cphlv27badalc" path="res://Units/peasant.tscn" id="3_qxmsc"]
+
+[node name="World" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("1_yo37u")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="UI"]
+theme_override_styles/panel = ExtResource("2_qp0od")
+
+[node name="Units" type="Node2D" parent="."]
+
+[node name="Peasant" parent="Units" instance=ExtResource("3_qxmsc")]
