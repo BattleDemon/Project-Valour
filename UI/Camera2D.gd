@@ -43,6 +43,14 @@ func _input(event):
 	if event is InputEventMouse:
 		mousePos = event.position
 		mousePosGlobal = get_global_mouse_position()
+		if event.is_pressed():
+			if event.is_action("Scroll up"):
+				if self.zoom < Vector2(3, 3):
+					self.zoom = self.zoom + Vector2(.1, .1)
+			elif event.is_action("Scroll down"):
+				if self.zoom > Vector2(.5, .5):
+					self.zoom = self.zoom - Vector2(.1, .1)
+				
 
 func draw_area(s=true):
 	box.size = Vector2(abs(startV.x - endV.x), abs(startV.y - endV.y))
