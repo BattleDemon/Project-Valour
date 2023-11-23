@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://c4fmngaqlkcjl"]
+
+[ext_resource type="Script" path="res://Units/spearman.gd" id="1_3isci"]
+[ext_resource type="Texture2D" uid="uid://blplidbmkenlo" path="res://Textures/MiniWorldSprites/Characters/Soldiers/Melee/CyanMelee/SpearmanCyan.png" id="1_ob0px"]
+[ext_resource type="StyleBox" uid="uid://hib5vqxpdxw0" path="res://UI/boxRes.tres" id="2_l2y5r"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dd351"]
+radius = 7.0
+height = 16.0
+
+[node name="Spearman" type="CharacterBody2D" groups=["Units"]]
+script = ExtResource("1_3isci")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_dd351")
+
+[node name="SpearmanCyan" type="Sprite2D" parent="."]
+texture = ExtResource("1_ob0px")
+hframes = 5
+vframes = 14
+
+[node name="Box" type="Panel" parent="."]
+offset_left = -7.0
+offset_top = -8.0
+offset_right = 7.0
+offset_bottom = 8.0
+theme_override_styles/panel = ExtResource("2_l2y5r")

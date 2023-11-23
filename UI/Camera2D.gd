@@ -8,10 +8,13 @@ var startV = Vector2()
 var end = Vector2()
 var endV = Vector2()
 var isDragging = false
-signal area_slected
+signal area_selected
 signal start_move_selection
 
 @onready var box = get_node("../UI/Panel")
+
+func _ready():
+	connect("area_selected", Callable(get_parent(), "_on_area_selected"))
 
 func _process(delta):
 	if Input.is_action_just_pressed("LeftClick"):
@@ -30,7 +33,7 @@ func _process(delta):
 			endV = mousePos
 			isDragging = false
 			draw_area(false)
-			emit_signal("area_slected")
+			emit_signal("area_selected", self)
 		else:
 			end = start
 			isDragging = false
@@ -48,3 +51,4 @@ func draw_area(s=true):
 	pos.y = min(startV.y, endV.y)
 	box.position = pos
 	box.size *= int(s)
+	

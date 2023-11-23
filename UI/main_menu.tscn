@@ -1,0 +1,79 @@
+[gd_scene load_steps=2 format=3 uid="uid://0abwv5s6xouq"]
+
+[ext_resource type="Script" path="res://UI/main_menu.gd" id="1_qiw4t"]
+
+[node name="MainMenu" type="CanvasLayer"]
+script = ExtResource("1_qiw4t")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -169.0
+offset_top = 87.0
+offset_right = 150.0
+offset_bottom = -483.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = -1.027
+anchor_right = 0.505
+anchor_bottom = -1.027
+offset_left = -160.5
+offset_top = 80.106
+offset_right = 159.905
+offset_bottom = 158.106
+theme_override_colors/font_color = Color(0.913725, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Project Valour"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CampaignButton" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.492
+anchor_right = 0.492
+offset_left = -100.784
+offset_top = 216.0
+offset_right = 100.216
+offset_bottom = 300.0
+text = "Campaign"
+
+[node name="SkirmishButton" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.492
+anchor_right = 0.492
+offset_left = -99.784
+offset_top = 315.0
+offset_right = 101.216
+offset_bottom = 399.0
+text = "Skirmish"
+
+[node name="SettingButton" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.492
+anchor_right = 0.492
+offset_left = -99.784
+offset_top = 416.0
+offset_right = 101.216
+offset_bottom = 500.0
+text = "Settings"
+
+[node name="ExitButton" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.492
+anchor_right = 0.492
+offset_left = -98.784
+offset_top = 522.0
+offset_right = 102.216
+offset_bottom = 606.0
+text = "EXIT"
+
+[connection signal="button_down" from="CampaignButton" to="." method="_on_campaign_button_button_down"]
+[connection signal="button_down" from="SkirmishButton" to="." method="_on_skirmish_button_button_down"]
+[connection signal="button_down" from="SettingButton" to="." method="_on_setting_button_button_down"]
+[connection signal="button_down" from="ExitButton" to="." method="_on_exit_button_button_down"]

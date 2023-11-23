@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://cvmti4xa01qsr"]
+
+[ext_resource type="Texture2D" uid="uid://ckyfo68w4rpiw" path="res://textures(other)/tiles2.png" id="1_mnyuo"]
+[ext_resource type="Script" path="res://Menus/TileMap.gd" id="2_rfcc0"]
+[ext_resource type="PackedScene" uid="uid://0abwv5s6xouq" path="res://UI/main_menu.tscn" id="3_qxnbu"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k551t"]
+texture = ExtResource("1_mnyuo")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_pmled"]
+sources/0 = SubResource("TileSetAtlasSource_k551t")
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_pmled")
+format = 2
+script = ExtResource("2_rfcc0")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1, 1)
+zoom = Vector2(0.5, 0.5)
+
+[node name="MainMenu" parent="." instance=ExtResource("3_qxnbu")]

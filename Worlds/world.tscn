@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://qm7nra1w75wj"]
+[gd_scene load_steps=6 format=3 uid="uid://qm7nra1w75wj"]
 
+[ext_resource type="Script" path="res://Worlds/world.gd" id="1_5jmw2"]
 [ext_resource type="Script" path="res://UI/Camera2D.gd" id="1_yo37u"]
 [ext_resource type="StyleBox" uid="uid://hib5vqxpdxw0" path="res://UI/boxRes.tres" id="2_qp0od"]
 [ext_resource type="PackedScene" uid="uid://cphlv27badalc" path="res://Units/peasant.tscn" id="3_qxmsc"]
+[ext_resource type="PackedScene" uid="uid://c4fmngaqlkcjl" path="res://Units/spearman.tscn" id="5_tai0g"]
 
 [node name="World" type="Node2D"]
+script = ExtResource("1_5jmw2")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 script = ExtResource("1_yo37u")
@@ -16,4 +19,23 @@ theme_override_styles/panel = ExtResource("2_qp0od")
 
 [node name="Units" type="Node2D" parent="."]
 
-[node name="Peasant" parent="Units" instance=ExtResource("3_qxmsc")]
+[node name="Peasants" type="Node2D" parent="Units"]
+
+[node name="Peasant" parent="Units/Peasants" instance=ExtResource("3_qxmsc")]
+
+[node name="Peasant2" parent="Units/Peasants" instance=ExtResource("3_qxmsc")]
+position = Vector2(13, 22)
+
+[node name="Peasant3" parent="Units/Peasants" instance=ExtResource("3_qxmsc")]
+position = Vector2(67, 34)
+
+[node name="Peasant4" parent="Units/Peasants" instance=ExtResource("3_qxmsc")]
+position = Vector2(103, 103)
+
+[node name="Spearmen" type="Node2D" parent="Units"]
+
+[node name="Spearman" parent="Units/Spearmen" instance=ExtResource("5_tai0g")]
+position = Vector2(59, 102)
+
+[node name="Spearman2" parent="Units/Spearmen" instance=ExtResource("5_tai0g")]
+position = Vector2(29, 99)
