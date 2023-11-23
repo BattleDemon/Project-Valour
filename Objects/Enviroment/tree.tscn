@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://jv61h12wjgm5"]
+
+[ext_resource type="Texture2D" uid="uid://dan81l03ynx8n" path="res://Textures/MiniWorldSprites/Nature/Trees.png" id="1_p74qr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1ikt1"]
+radius = 7.0
+height = 18.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8i8xl"]
+bg_color = Color(0.513726, 0.654902, 0.337255, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 0.705882, 0.203922, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Tree" type="StaticBody2D"]
+scale = Vector2(1.25, 1.25)
+
+[node name="Trees" type="Sprite2D" parent="."]
+position = Vector2(2, 2)
+scale = Vector2(2, 2)
+texture = ExtResource("1_p74qr")
+hframes = 4
+frame = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 6.4)
+shape = SubResource("CapsuleShape2D_1ikt1")
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+offset_left = -24.0
+offset_top = -18.0
+offset_right = 23.0
+offset_bottom = 28.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8i8xl")
