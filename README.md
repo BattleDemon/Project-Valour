@@ -4,12 +4,7 @@
 RTS game inspired by Age of Empires, Starcraft and Warcraft. 
 
 ## Controls
-|Camera | Controls|
-|-------|-------|
-| W     | Up |
-| A   | Left |
-| S   | Down |
-| D | Right |
+Camera Controls <br /> W - UP <br /> A - LEFT <br /> S - DOWN <br /> D - RIGHT
 
 ## Credits
 Coding Quest (https://www.youtube.com/@CodingQuests) for his RTS tutorial series, that gave a start to this project.  <br />
