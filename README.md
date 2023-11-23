@@ -4,7 +4,7 @@
 RTS game inspired by Age of Empires, Starcraft and Warcraft. 
 
 ## Controls
-|Camera | Controls|
+|Camera  Controls|
 |-------|-------|
 | W     | Up |
 | A   | Left |
