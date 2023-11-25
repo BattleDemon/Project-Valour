@@ -8,6 +8,7 @@ RTS game inspired by Age of Empires, Starcraft and Warcraft.
 |------|------|-------|---------|---------|----------|
 | Peasant | 25 Food | 10 | 1 | *X* | .5 Seconds |
 | Spearman | 20 Food, 15 Gold | 15 | 5 | *X* | .75 Seconds |
+| Guardman | 30 Food, 20 Gold | 25 | 8 | *X* | 1 Second |
 ### Buildings
 
 ### Enemy Units
