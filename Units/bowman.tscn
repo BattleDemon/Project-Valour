@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cj3v38vj7kusk"]
+
+[node name="Bowman" type="CharacterBody2D"]

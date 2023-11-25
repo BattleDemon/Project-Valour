@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cw6v18cstn1ix"]
+
+[node name="SpearGoblin" type="CharacterBody2D"]

@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://iucpcukmh6tc"]
+
+[node name="Goblin Brute" type="CharacterBody2D"]

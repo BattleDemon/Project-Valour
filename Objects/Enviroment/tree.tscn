@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://jv61h12wjgm5"]
+[gd_scene load_steps=5 format=3 uid="uid://jv61h12wjgm5"]
 
 [ext_resource type="Texture2D" uid="uid://dan81l03ynx8n" path="res://Textures/MiniWorldSprites/Nature/Trees.png" id="1_p74qr"]
+[ext_resource type="Script" path="res://Objects/Enviroment/tree.gd" id="1_udngw"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1ikt1"]
 radius = 7.0
@@ -20,6 +21,7 @@ corner_radius_bottom_left = 20
 
 [node name="Tree" type="StaticBody2D"]
 scale = Vector2(1.25, 1.25)
+script = ExtResource("1_udngw")
 
 [node name="Trees" type="Sprite2D" parent="."]
 position = Vector2(2, 2)
@@ -39,3 +41,7 @@ offset_top = -18.0
 offset_right = 23.0
 offset_bottom = 28.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_8i8xl")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

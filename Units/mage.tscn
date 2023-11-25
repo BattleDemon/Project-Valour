@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://bxsht8m2se2yb"]
+
+[node name="Mage" type="CharacterBody2D"]

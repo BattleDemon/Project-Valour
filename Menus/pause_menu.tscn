@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://wg54j03ome3l"]
+
+[ext_resource type="Script" path="res://Menus/pause_menu.gd" id="1_cdlwj"]
+
+[node name="Pause Menu" type="CanvasLayer"]
+script = ExtResource("1_cdlwj")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 2.0
+offset_top = 37.0
+offset_right = 42.0
+offset_bottom = 77.0
+scale = Vector2(4.85045, 6.88)
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 107.0
+offset_bottom = 26.0
+scale = Vector2(0.344258, 0.21732)
+text = "Game Paused"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Resume Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 7.21583
+offset_top = 5.66861
+offset_right = 77.2158
+offset_bottom = 36.6686
+scale = Vector2(0.350934, 0.186046)
+text = "Resume"
+
+[node name="Settings Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 7.21583
+offset_top = 16.8605
+offset_right = 77.2158
+offset_bottom = 47.8605
+scale = Vector2(0.350934, 0.186046)
+text = "Settings"
+
+[node name="Exit Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 7.21583
+offset_top = 29.2151
+offset_right = 77.2158
+offset_bottom = 60.2151
+scale = Vector2(0.350934, 0.186046)
+text = "Exit"
+
+[connection signal="pressed" from="Panel/Resume Button" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="Panel/Settings Button" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="Panel/Exit Button" to="." method="_on_exit_button_pressed"]

@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://b4451x8t1ymp6"]
+
+[node name="Forester" type="StaticBody2D"]

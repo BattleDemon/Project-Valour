@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cogtk7oxsu76y"]
+
+[node name="Gold Mine" type="StaticBody2D"]
