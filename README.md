@@ -5,6 +5,7 @@ RTS game inspired by Age of Empires, Starcraft and Warcraft.
 
 ### Units
 | **Name** | **Cost** | **Health**  | **Damage** | **Range** | **Hit Rate** |
+|------|------|-------|---------|---------|----------|
 | Peasant | 25 Food | 10 | 1 | *X* | .5 Seconds |
 ### Buildings
 
