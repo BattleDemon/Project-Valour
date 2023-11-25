@@ -1,6 +1,6 @@
-# Project Valour
+# **Project Valour**
  
-## Overview
+## **Overview**
 RTS game inspired by Age of Empires, Starcraft and Warcraft.
 
 ### Units
