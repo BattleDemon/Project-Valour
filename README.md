@@ -19,6 +19,10 @@ RTS game inspired by Age of Empires, Starcraft and Warcraft.
 | **Name** | **Health**  | **Damage** | **Range** | **Hit Rate** |
 |------|------|---------|---------|----------|
 | Orc Peasant | 10 | 2 | *X* | .75 Seconds |
+| Spear Goblin | 15 | 5 | *X* | .75 Seconds |
+| Goblin Brute | 20 | 8 | *X* | 1 Second |
+| Kamikaze Goblin | 15 | 20 | *X* | When Killed / Reach Player |
+
 
 ## Controls
 <ins> **Camera Control** </ins> <br /> W - UP <br /> A - LEFT <br /> S - DOWN <br /> D - RIGHT <br /> Scrollwheel Up - Zoom In <br /> Scrollwheel Down - Zoom Out <br /> <br /> <ins> **Game Controls** </ins> <br /> Leftclick and Drag - Selection Box <br /> Right Click (while units selected) - Move units to click or when held move units to cursor <br />
