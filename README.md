@@ -1,7 +1,14 @@
 # Project Valour
  
 ## Overview
-RTS game inspired by Age of Empires, Starcraft and Warcraft. [comment]: <> (You begin the game as a Hero, 3 Peasants and a Spearman. The hero can place a Keep which can spawn more peasants for 20 food.) 
+RTS game inspired by Age of Empires, Starcraft and Warcraft.
+
+### Units
+| **Name** | **Cost** | **Health**  | **Damage** | **Range** | **Hit Rate** |
+| Peasant | 25 Food | 10 | 1 | *X* | .5 Seconds |
+### Buildings
+
+### Enemy Units
 
 ## Controls
 <ins> **Camera Control** </ins> <br /> W - UP <br /> A - LEFT <br /> S - DOWN <br /> D - RIGHT <br /> Scrollwheel Up - Zoom In <br /> Scrollwheel Down - Zoom Out <br /> <br /> <ins> **Game Controls** </ins> <br /> Leftclick and Drag - Selection Box <br /> Right Click (while units selected) - Move units to click or when held move units to cursor <br />
