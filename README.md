@@ -22,6 +22,8 @@ RTS game inspired by Age of Empires, Starcraft and Warcraft.
 | Spear Goblin | 15 | 5 | *X* | .75 Seconds |
 | Goblin Brute | 20 | 8 | *X* | 1 Second |
 | Kamikaze Goblin | 15 | 20 | *X* | When Killed / Reach Player |
+| Archer Goblin | 15 | 3 | *X* | .75 Seconds |
+| Orc Mage | 10 | 7 | *X* | 1.25 Seconds |
 
 
 ## Controls
