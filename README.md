@@ -6,13 +6,13 @@ RTS game inspired by Age of Empires, Starcraft and Warcraft.
 ### Units
 | **Name** | **Cost** | **Health**  | **Damage** | **Range** | **Hit Rate** |
 |------|------|-------|---------|---------|----------|
-| Peasant | 25 Food | 10 | 1 | *X* | .5 Seconds |
-| Spearman | 20 Food, 15 Gold | 15 | 5 | *X* | .75 Seconds |
-| Guardman | 30 Food, 20 Gold | 25 | 8 | *X* | 1 Second |
-| Axeman | 40 Food, 15 Gold | 20 | 5 | *X* | .25 Seconds |
-| Knight | 30 Food, 50 Gold | 40 | 10 | *X* | 1.25 Seconds |
-| Bowman | 15 Food, 10 Gold | 10 | 3 | *X* | 1 Second |
-| Mage | 20 Food, 30 Gold | 5 | 7 | *X* | 1.25 Seconds |
+| Peasant | 25 Food | 10 | 1 | 12 Pixels | .5 Seconds |
+| Spearman | 20 Food, 15 Gold | 15 | 5 | 25 Pixels | .75 Seconds |
+| Guardman | 30 Food, 20 Gold | 25 | 8 | 18 Pixels | 1 Second |
+| Axeman | 40 Food, 15 Gold | 20 | 5 | 18 Pixels | .25 Seconds |
+| Knight | 30 Food, 50 Gold | 40 | 10 | 25 Pixels | 1.25 Seconds |
+| Bowman | 15 Food, 10 Gold | 10 | 3 | 150 - 300 Pixels | 1 Second |
+| Mage | 20 Food, 30 Gold | 5 | 7 | 200 - 300 Pixels | 1.25 Seconds |
 ### Buildings
 
 ### Enemy Units
